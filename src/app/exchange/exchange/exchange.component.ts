@@ -25,7 +25,7 @@ public active:any
 public locked:any
 public validate1:boolean=false;
 public validate2:boolean=false;
-  constructor(private admin:AminService,private spinner: NgxSpinnerService,private navig:NavigationService) 
+  constructor(private admin:AminService,private spinner: NgxSpinnerService,public navig:NavigationService) 
   { 
     this.web3=this.admin.getWeb3()
     this.datastore1 =new this.web3.eth.Contract(Constants.datastore,Constants.datastoreAddressWAN,{

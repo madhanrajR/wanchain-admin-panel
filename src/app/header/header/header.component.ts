@@ -15,7 +15,7 @@ export class HeaderComponent implements OnInit {
   public home:boolean=true;
   basket:boolean=false;
   exchange:boolean=false;
-  constructor(private auth:AuthService,private admin:AminService) 
+  constructor(public auth:AuthService,private admin:AminService) 
   { 
     this.web3=this.admin.getWeb3();
     console.log(this.web3);

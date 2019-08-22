@@ -26,7 +26,7 @@ public validate1:boolean=false;
 public validate2:boolean=false;
 public val:any
 web3:any
-  constructor(private admin:AminService,private spinner: NgxSpinnerService,private navig:NavigationService) 
+  constructor(private admin:AminService,private spinner: NgxSpinnerService,public navig:NavigationService) 
   { 
 this.web3=this.admin.getWeb3()
     this.tradefee =new this.web3.eth.Contract(Constants.Tradefeeabi,Constants.TradefeeAddress,{
