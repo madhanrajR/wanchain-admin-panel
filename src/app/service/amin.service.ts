@@ -9,7 +9,7 @@ export class AminService {
   web3:any
   constructor() 
   {
-    this.web3 = new Web3(new Web3.providers.HttpProvider("http://18.216.117.215:8545"));
+    this.web3 = new Web3(new Web3.providers.HttpProvider("https://mywanwallet.nl/testnet"));
    }
 
    getWeb3() {
